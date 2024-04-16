@@ -1,10 +1,6 @@
 // deno-lint-ignore-file no-explicit-any
 import { StateContext } from '../StateContext.ts';
-import {
-  StateFlowActionHandler,
-  StateFlowActionHandlerResult,
-  StateFlowActionHandlers,
-} from './StateFlowActionHandler.ts';
+import { StateFlowActionHandler, StateFlowActionHandlers } from './StateFlowActionHandler.ts';
 
 export type StateFlowStateActionHandler<
   TState = unknown,
@@ -19,7 +15,7 @@ export type StateFlowStateActionHandlers<
   $init?: StateFlowStateActionHandler<TState>;
 };
 
-export type StateFlowStateActionHandlerResult<TState = unknown> = StateFlowActionHandlerResult<
-  StateContext<TState>,
-  TState
->;
+// export type StateFlowStateActionHandlerResult<TState = unknown> = StateFlowActionHandlerResult<
+//   StateContext<TState>,
+//   TState
+// >;

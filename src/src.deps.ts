@@ -1,3 +1,4 @@
+export * from 'https://deno.land/x/zod@v3.22.4/mod.ts';
 export * from 'https://deno.land/x/fathym_common@v0.0.179/mod.ts';
 export * from 'https://deno.land/x/fathym_ioc@v0.0.7/mod.ts';
 export * from '../../everything-as-code/mod.ts';

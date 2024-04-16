@@ -1,10 +1,6 @@
 // deno-lint-ignore-file no-explicit-any
 import { EntityContext } from '../EntityContext.ts';
-import {
-  StateFlowActionHandler,
-  StateFlowActionHandlerResult,
-  StateFlowActionHandlers,
-} from './StateFlowActionHandler.ts';
+import { StateFlowActionHandler, StateFlowActionHandlers } from './StateFlowActionHandler.ts';
 
 export type StateFlowEntityActionHandler<
   TEntity = unknown,
@@ -19,7 +15,7 @@ export type StateFlowEntityActionHandlers<
   $init?: StateFlowEntityActionHandler<TEntity>;
 };
 
-export type StateFlowEntityActionHandlerResult<TEntity = unknown> = StateFlowActionHandlerResult<
-  EntityContext<TEntity>,
-  TEntity
->;
+// export type StateFlowEntityActionHandlerResult<TEntity = unknown> = StateFlowActionHandlerResult<
+//   EntityContext<TEntity>,
+//   TEntity
+// >;

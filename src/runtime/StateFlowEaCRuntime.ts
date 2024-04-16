@@ -15,7 +15,7 @@ import {
 } from '../src.deps.ts';
 import { StateContext } from './StateContext.ts';
 import { StateFlowStateProcessor } from './StateFlowStateProcessor.ts';
-import { StateFlowStateActionHandlerResult } from './actions/StateFlowStateActionHandler.ts';
+import { StateFlowStateActionHandlers } from './actions/StateFlowStateActionHandler.ts';
 
 export type StateFlowEaCRuntimeHandler<TState = unknown> = (
   request: Request,
@@ -33,7 +33,7 @@ export type StateFlowHandlerConfig = {
 };
 
 export type StateFlowStateHandlerConfig = {
-  Actions: StateFlowStateActionHandlerResult;
+  Actions: StateFlowStateActionHandlers;
 
   Pattern: URLPattern;
 

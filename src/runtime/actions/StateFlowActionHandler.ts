@@ -19,13 +19,13 @@ export type StateFlowActionHandlers<
     | undefined;
 };
 
-export type StateFlowActionHandlerResult<
-  TContext extends EntityContext<TEntity> | StateContext<TEntity>,
-  TEntity = unknown,
-> =
-  | StateFlowActionHandler<TContext, TEntity>
-  | StateFlowActionHandlers<TContext, TEntity>
-  | (
-    | StateFlowActionHandler<TContext, TEntity>
-    | StateFlowActionHandlers<TContext, TEntity>
-  )[];
+// export type StateFlowActionHandlerResult<
+//   TContext extends EntityContext<TEntity> | StateContext<TEntity>,
+//   TEntity = unknown,
+// > =
+//   | StateFlowActionHandler<TContext, TEntity>
+//   | StateFlowActionHandlers<TContext, TEntity>
+//   | (
+//     | StateFlowActionHandler<TContext, TEntity>
+//     | StateFlowActionHandlers<TContext, TEntity>
+//   )[];
